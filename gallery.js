@@ -1,0 +1,1 @@
+(() => {const value=window.CLASS_CONFIG?.galleryUrl;if(!value)return;try{const u=new URL(value);if(u.protocol!=="https:")return;document.getElementById("gallery").src=u.href;const a=document.getElementById("wide");a.href=u.href;a.hidden=false;}catch{document.getElementById("fallback").textContent="게시판 주소를 확인해 주세요.";}})();
